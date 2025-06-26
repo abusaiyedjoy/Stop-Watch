@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Stopwatch</h1>
+        </header>
+        
+        <main>
+            <div class="stopwatch-display">
+                <div class="time-display" id="timeDisplay" aria-live="polite">
+                    00:00:00:000
+                </div>
+            </div>
+            
+            <div class="controls">
+                <button 
+                    id="startStopBtn" 
+                    class="btn btn-primary" 
+                    aria-label="Start stopwatch"
+                    title="Press spacebar to start/stop"
+                >
+                    Start
+                </button>
+                <button 
+                    id="resetBtn" 
+                    class="btn btn-secondary" 
+                    disabled
+                    aria-label="Reset stopwatch"
+                    title="Press 'R' to reset"
+                >
+                    Reset
+                </button>
+            </div>
+            
+            <div class="keyboard-shortcuts">
+                <p>Keyboard shortcuts: <kbd>Space</kbd> Start/Stop • <kbd>R</kbd> Reset</p>
+            </div>
+        </main>
+        
+        <footer>
+            <p>Built with vanilla JavaScript</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
